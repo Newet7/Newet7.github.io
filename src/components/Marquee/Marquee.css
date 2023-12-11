@@ -1,0 +1,24 @@
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-content span {
+  padding-right: 20px; /* добавление пробела между каждым элементом */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  } /* начальное положение справа */
+  100% {
+    transform: translateX(-100%);
+  } /* эффект перемещения влево */
+}
